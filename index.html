@@ -4,114 +4,243 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aposentadoria Imobiliária - Daiane Viana</title>
+
 <style>
-  /* Reset e estilos básicos */
-  * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
-  body { background:#f7f7f7; color:#333; line-height:1.6; }
-  a { text-decoration:none; color:#fff; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  header { background:#004a99; color:#fff; padding:50px 20px; text-align:center; position:relative; }
-  header h1 { font-size:2.2em; margin-bottom:10px; }
-  header p { font-size:1.2em; margin-bottom:20px; }
-  .btn { background:#ff9900; padding:15px 25px; border-radius:5px; font-weight:bold; display:inline-block; cursor:pointer; transition:0.3s; }
-  .btn:hover { background:#e68a00; }
+body {
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .container { max-width:1200px; margin:0 auto; padding:50px 20px; }
-  .flex { display:flex; gap:30px; flex-wrap:wrap; align-items:center; }
-  .flex img { max-width:100%; border-radius:10px; }
-  h2 { margin-bottom:20px; color:#004a99; }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
-  /* Sobre Mim */
-  #sobre { background:#fff; padding:50px 20px; }
-  #sobre .texto { flex:1; }
-  #sobre img { flex:1; max-width:400px; }
+header {
+  background: #004a99;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
 
-  /* Depoimentos */
-  #depoimentos { background:#e6f0ff; padding:50px 20px; text-align:center; }
-  .slide { display:none; }
-  .slide.active { display:block; }
-  .depo-container { position:relative; max-width:800px; margin:0 auto; }
-  .depo-text { background:rgba(0,0,0,0.05); padding:20px; border-radius:10px; margin-top:10px; }
-  .depo-buttons { margin-top:20px; }
-  .depo-buttons span { cursor:pointer; display:inline-block; width:15px; height:15px; background:#004a99; border-radius:50%; margin:0 5px; }
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
 
-  /* Consórcio / Soluções */
-  #consorcio { background:#fff; padding:50px 20px; text-align:center; }
-  .quadrado { background:#e6f0ff; padding:30px; display:inline-block; border-radius:10px; text-align:left; max-width:500px; }
-  .quadrado p { margin:10px 0; }
+header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
 
-  /* Consórcio Agro */
-  #agro { background:#f0f0f0; padding:50px 20px; text-align:center; }
-  #agro img { width:300px; margin:10px; border-radius:10px; }
+.btn {
+  background: #ff9900;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
 
-  /* Blog com PDFs */
-  #blog { background:#fff; padding:50px 20px; }
-  .pdf-card { background:#e6f0ff; padding:20px; border-radius:10px; margin-bottom:20px; text-align:center; }
-  .pdf-card button { margin-top:10px; }
+.btn:hover {
+  background: #e68a00;
+}
 
-  /* FAQ */
-  #faq { background:#f0f0f0; padding:50px 20px; }
-  .faq-item { margin-bottom:20px; }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
 
-  /* Simulador */
-  #simulador { background:#fff; padding:50px 20px; text-align:center; }
-  #simulador input, #simulador select { padding:10px; margin:10px 0; width:80%; max-width:400px; }
-  #simulador button { margin-top:20px; }
+.flex {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  footer { background:#004a99; color:#fff; text-align:center; padding:30px 20px; }
+.flex img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #004a99;
+  margin-bottom: 20px;
+}
+
+/* Sobre */
+#sobre {
+  background: #fff;
+}
+
+#sobre img {
+  max-width: 400px;
+}
+
+/* Depoimentos */
+#depoimentos {
+  background: #e6f0ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.depo-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.depo-text {
+  background: rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.depo-buttons span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #004a99;
+  border-radius: 50%;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+/* Consórcio */
+#consorcio {
+  background: #fff;
+  text-align: center;
+}
+
+.quadrado {
+  background: #e6f0ff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Agro */
+#agro {
+  background: #f0f0f0;
+  text-align: center;
+}
+
+#agro img {
+  width: 280px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Blog */
+.pdf-card {
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FAQ */
+#faq {
+  background: #f0f0f0;
+}
+
+/* Simulador */
+#simulador {
+  background: #fff;
+  text-align: center;
+}
+
+#simulador input,
+#simulador select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+footer {
+  background: #004a99;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+  }
+}
 </style>
 </head>
+
 <body>
 
-<!-- Home / Banner -->
 <header>
-  <h1>Aposentadoria Imobiliária: Construa patrimônio e renda sem depender de bancos!</h1>
-  <p>Descubra como usar a Carta de Crédito para investir de forma inteligente.</p>
-  <a href="#simulador" class="btn">Simule sua Carta de Crédito</a>
+  <h1>Aposentadoria Imobiliária</h1>
+  <p>Construa patrimônio e renda sem depender de bancos</p>
+  <a href="#simulador" class="btn">Simular Carta de Crédito</a>
+
   <div style="margin-top:30px;">
-    <!-- Vídeo institucional -->
-    <video width="400" controls>
+    <video controls>
       <source src="video_institucional.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
     </video>
   </div>
 </header>
 
-<!-- Sobre Mim -->
-<section id="sobre" class="flex container">
+<section id="sobre" class="container flex">
   <img src="foto_sua.jpg" alt="Daiane Viana">
-  <div class="texto">
+  <div>
     <h2>Sobre Mim</h2>
-    <p>Sou <strong>Daiane Viana</strong>, empreendedora, investidora em consórcios e mãe de uma filha de quatro patas 🐾. Apaixonada pelo que faço, já há 10 anos auxilio pessoas a realizarem seus projetos.</p>
-    <p>Atuo há 5 anos no mercado financeiro, com experiência adquirida em instituições, onde aprendi como funciona o Sistema Financeiro Nacional e suas estratégias.</p>
-    <p>Hoje, ajudo empresários e investidores a alavancar patrimônio utilizando a carta de crédito como ferramenta de planejamento e aposentadoria imobiliária, deixando o dinheiro trabalhar para eles.</p>
-    <p>Ofereço soluções com <strong>entradas facilitadas</strong> ou mesmo sem entrada e <strong>taxas a partir de 1,2% a.a.</strong></p>
+    <p>Sou <strong>Daiane Viana</strong>, especialista em consórcios e planejamento patrimonial.</p>
     <a href="https://wa.me/5548998289828" class="btn">Fale comigo no WhatsApp</a>
   </div>
 </section>
 
-<!-- Depoimentos -->
 <section id="depoimentos">
-  <h2>Depoimentos Reais</h2>
+  <h2>Depoimentos</h2>
+
   <div class="depo-container">
     <div class="slide active">
-      <video width="400" controls>
-        <source src="depoimento1.mp4" type="video/mp4">
-      </video>
-      <div class="depo-text">"Consegui minha carta de crédito e hoje posso investir com segurança!" – João P., Florianópolis</div>
+      <video controls><source src="depoimento1.mp4"></video>
+      <div class="depo-text">Cliente satisfeito</div>
     </div>
+
     <div class="slide">
-      <video width="400" controls>
-        <source src="depoimento2.mp4" type="video/mp4">
-      </video>
-      <div class="depo-text">"A consultoria da Daiane foi essencial para entender o processo de investimento." – Maria L., Porto Alegre</div>
+      <video controls><source src="depoimento2.mp4"></video>
+      <div class="depo-text">Resultado real</div>
     </div>
+
     <div class="slide">
-      <video width="400" controls>
-        <source src="depoimento3.mp4" type="video/mp4">
-      </video>
-      <div class="depo-text">"Hoje consigo planejar meu patrimônio com tranquilidade graças à orientação da Daiane." – Carlos S., São Paulo</div>
+      <video controls><source src="depoimento3.mp4"></video>
+      <div class="depo-text">Planejamento eficiente</div>
     </div>
+
     <div class="depo-buttons">
       <span onclick="showSlide(0)"></span>
       <span onclick="showSlide(1)"></span>
@@ -120,130 +249,20 @@
   </div>
 </section>
 
-<!-- Consórcio / Soluções -->
-<section id="consorcio">
-  <h2>Consórcio / Soluções</h2>
+<section id="consorcio" class="container">
+  <h2>Soluções</h2>
   <div class="quadrado">
-    <p>1️⃣ Possibilidade de altíssimos lucros com revenda da carta contemplada</p>
-    <p>2️⃣ Aquisição de imóvel com autoquitação pelo inquilino</p>
-    <p>3️⃣ Planejamento com previsibilidade e sem juros bancários</p>
-    <p>4️⃣ Possibilidade de usar carta para arrematar imóvel de leilão</p>
-    <p>5️⃣ Modelo usado por empresários de todo Brasil para escalar patrimônio de forma ética e sustentável</p>
+    <p>✔ Planejamento patrimonial</p>
+    <p>✔ Investimento imobiliário</p>
+    <p>✔ Consórcio sem juros</p>
   </div>
 </section>
 
-<!-- Consórcio Agro -->
 <section id="agro">
-  <h2>Consórcio para Agro</h2>
-  <img src="agro1.jpg" alt="Agro 1">
-  <img src="agro2.jpg" alt="Agro 2">
-  <img src="agro3.jpg" alt="Agro 3">
+  <h2>Consórcio Agro</h2>
+  <img src="agro1.jpg">
+  <img src="agro2.jpg">
+  <img src="agro3.jpg">
 </section>
 
-<!-- Blog / PDFs -->
-<section id="blog" class="container">
-  <h2>Blog / PDFs</h2>
-  <div class="pdf-card">
-    <h3>Consórcio Agro</h3>
-    <p>Para acessar, preencha o formulário abaixo:</p>
-    <form onsubmit="alert('PDF liberado!'); return false;">
-      <input type="text" placeholder="Nome" required><br>
-      <input type="email" placeholder="E-mail" required><br>
-      <input type="tel" placeholder="Telefone/WhatsApp" required><br>
-      <button type="submit">Liberar PDF</button>
-    </form>
-  </div>
-  <div class="pdf-card">
-    <h3>Consórcio Investimentos</h3>
-    <p>Para acessar, preencha o formulário abaixo:</p>
-    <form onsubmit="alert('PDF liberado!'); return false;">
-      <input type="text" placeholder="Nome" required><br>
-      <input type="email" placeholder="E-mail" required><br>
-      <input type="tel" placeholder="Telefone/WhatsApp" required><br>
-      <button type="submit">Liberar PDF</button>
-    </form>
-  </div>
-  <div class="pdf-card">
-    <h3>Consórcio Imobiliário / Outro Imóveis</h3>
-    <p>Para acessar, preencha o formulário abaixo:</p>
-    <form onsubmit="alert('PDF liberado!'); return false;">
-      <input type="text" placeholder="Nome" required><br>
-      <input type="email" placeholder="E-mail" required><br>
-      <input type="tel" placeholder="Telefone/WhatsApp" required><br>
-      <button type="submit">Liberar PDF</button>
-    </form>
-  </div>
-</section>
-
-<!-- Perguntas Frequentes -->
-<section id="faq" class="container">
-  <h2>Perguntas Frequentes</h2>
-  <div class="faq-item">
-    <strong>Como funciona a Carta de Crédito?</strong>
-    <p>É um sistema de consórcio que permite investir em imóveis, veículos e outros bens com planejamento e segurança.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Posso investir em imóvel para aluguel?</strong>
-    <p>Sim, você pode usar a carta para aquisição de imóveis para renda ou patrimônio.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Há taxas escondidas?</strong>
-    <p>Não. Todas as taxas são transparentes e informadas previamente.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Qual o prazo médio para contemplação?</strong>
-    <p>Depende do plano, mas há várias estratégias para antecipar a contemplação.</p>
-  </div>
-</section>
-
-<!-- Simulador -->
-<section id="simulador">
-  <h2>Simulador de Carta de Crédito</h2>
-  <form onsubmit="enviarSimulacao(); return false;">
-    <select required>
-      <option value="">Tipo de Objetivo</option>
-      <option value="investimento">Investimentos / Revender Carta</option>
-      <option value="imovel">Imóvel</option>
-      <option value="carro">Carro</option>
-      <option value="caminhao">Caminhão</option>
-    </select><br>
-    <input type="number" placeholder="Valor desejado (R$)" required min="100000" max="2000000"><br>
-    <input type="tel" placeholder="Telefone / WhatsApp" required><br>
-    <button type="submit" class="btn">Simule agora a oportunidade</button>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>© 2025 Daiane Viana - Todos os direitos reservados</p>
-</footer>
-
-<script>
-  // Slider de depoimentos
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelectorAll('.depo-buttons span');
-
-  function showSlide(n) {
-    slides.forEach(s => s.classList.remove('active'));
-    dots.forEach(d => d.style.background='#004a99');
-    slides[n].classList.add('active');
-    dots[n].style.background='#ff9900';
-    currentSlide = n;
-  }
-
-  // Auto-slide a cada 8s
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }, 8000);
-
-  // Simulador envio
-  function enviarSimulacao() {
-    alert("Simulação enviada! Entraremos em contato pelo WhatsApp.");
-    window.location.href = "https://wa.me/5548998289828";
-  }
-</script>
-
-</body>
-</html>
+<section id="si
